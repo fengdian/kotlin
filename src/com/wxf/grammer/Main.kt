@@ -1,10 +1,10 @@
 package com.wxf.grammer
-//º¯ÊıµÄ¶¨Òå
+//å‡½æ•°çš„å®šä¹‰
 fun sum(a :Int,b:Int):Int{
 	return a+b
 }
 fun sub(a:Int,b:Int)=a-b
-//if Óï¾ä
+//if è¯­å¥
 fun max(a:Int,b:Int):Int{
 	if(a>b){
 		return a
@@ -13,34 +13,34 @@ fun max(a:Int,b:Int):Int{
 	}
 }
 fun min(a:Int,b:Int):Int =if(a>b) b else a
-//whenÓï¾ä
+//whenè¯­å¥
 fun prasize(obj:String):String =
 		when(obj){
-			"wxf" -> "ÍõĞ¢·æ"
-			else  -> "²»ÊÇ±¾ÈË"
+			"wxf" -> "12"
+			else  -> "ä¸æ˜¯æœ¬äºº"
 					
 		}
 fun main(args: Array<String>) {
-	//º¯Êı¶¨Òå
+	//å‡½æ•°å®šä¹‰
 	println("a+b="+sum(45,89))
 	println("a-b="+sub(78,28))
-	//±äÁ¿³õÊ¼»¯
-	var x = 5//×Ô¶¯³õÊ¼»¯
-	var a:Int = 12//Á¢¼´³õÊ¼»¯
-	var b:Int  //Î´³õÊ¼»¯ĞèÒªÉùÃ÷ÀàĞÍ
+	//å˜é‡åˆå§‹åŒ–
+	var x = 5//è‡ªåŠ¨åˆå§‹åŒ–
+	var a:Int = 12//ç«‹å³åˆå§‹åŒ–
+	var b:Int  //æœªåˆå§‹åŒ–éœ€è¦å£°æ˜ç±»å‹
 	println("a=$a\tx=$x")
-	//×Ö·û´®
-  // Ê¹ÓÃ±äÁ¿Ãû×÷ÎªÄ£°å:
+	//å­—ç¬¦ä¸²
+  // ä½¿ç”¨å˜é‡åä½œä¸ºæ¨¡æ¿:
 	  val s1 = "a is $a"
 	  println(s1)
 	  a = 2
-	  // Ê¹ÓÃ±í´ïÊ½×÷ÎªÄ£°å:
+	  // ä½¿ç”¨è¡¨è¾¾å¼ä½œä¸ºæ¨¡æ¿:
 	  val s2 = "${s1.replace("is", "was")}, but now is $a"
 	  println(s2)
-	//ifÓï¾ä
-	println("6ºÍ9×î´óÖµ${max(6,9)}")
-	println("6ºÍ9×î´óÖµ${min(6,9)}")
-	//for Ñ­»·
+	//ifè¯­å¥
+	println("6å’Œ9æœ€å¤§å€¼${max(6,9)}")
+	println("6å’Œ9æœ€å¤§å€¼${min(6,9)}")
+	//for å¾ªç¯
 	var items = listOf("a","b","c")
 	for(item in items){
 		print(item)
@@ -50,16 +50,16 @@ fun main(args: Array<String>) {
 		print(items[index])
 		print("\t")
 	}
-	//whileÑ­»·
+	//whileå¾ªç¯
 	var  index =0
 	while(index<items.size){
 		print(items[index])
 		index++
 	}
 	println("")
-	//when Óï¾ä
+	//when è¯­å¥
 	println(prasize("wxf"))
-	println(prasize("ÔüÔü"))
+	println(prasize("æ¸£æ¸£"))
 		 x = 10
 	  val y = 9
 	  if (x in 1..y+1) {
